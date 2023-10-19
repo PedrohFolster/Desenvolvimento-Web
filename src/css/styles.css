@@ -1,46 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Mooli&display=swap');
 
-:root{
+:root {
     --cor-fundo: #272829;
-    --cor-principal: #D8D9DA;
-    --cor-secundaria: #61677A;
+    --cor-principal: #d8d9da;
+    --cor-secundaria: #61677a;
     --cor-fonte: #ffffff;
     --cor-linha-tabela: #000000;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     display: flex;
     background-color: var(--cor-fundo);
 }
 
+/* Lateral da Página */
 
-/*------------------------------*/
-/* Lateral da Página*/
-/*------------------------------*/
-
-
-.lateral{
+.lateral {
     font-family: 'Mooli', sans-serif;
     width: 25%;
     text-align: center;
     color: var(--cor-fonte);
 }
 
-.foto, .contato, .interesses, .referrencias{
+.foto, .contato, .interesses, .referencias {
     padding: 40px 0px;
 }
 
-.contato h2, .interesses h2, .referrencias h2{
+.contato h2, .interesses h2, .referencias h2 {
     padding: 10px 0px;
 }
 
-.contato h2:hover, .interesses h2:hover, .referrencias h2:hover {
+.contato h2:hover, .interesses h2:hover, .referencias h2:hover {
     background-color: var(--cor-secundaria);
 }
 
@@ -50,7 +46,7 @@ body{
     margin-top: 30px;
 }
 
-.contato p, .referrencias p, .educacao p, .profissinal p, .projetos p {
+.contato p, .referencias p, .educacao p, .profissional p, .projetos p {
     margin: 10px 25px;
 }
 
@@ -59,18 +55,14 @@ body{
     text-align: justify;
 }
 
-.referrencias p {
+.referencias p {
     margin: 10px 25px;
     text-align: justify;
 }
 
+/* Principal */
 
-/*------------------------------*/
-/* Lateral da Página*/
-/*------------------------------*/
-
-
-.principal{
+.principal {
     background-color: var(--cor-principal);
     margin: 50px 0px;
     padding: 50px 0px 0px 50px;
@@ -78,7 +70,7 @@ body{
     font-family: 'Inclusive Sans', sans-serif;
 }
 
-.tecnico, .pessoal, .profissional, .educacao, .certificacao, .projetos, .idioma {
+.tecnica, .pessoal, .profissional, .educacao, .certificacao, .projetos, .idioma {
     padding: 10px 0px 20px 0px;
 }
 
@@ -90,16 +82,12 @@ body{
     align-items: center;
 }
 
-.tecnico ul, .profissinal ul, .certificacao ul {
-    padding: 15px 0px 15px 50px;
-}
-
-.pessoal ol {
+.tecnica ul, .profissional ul, .certificacao ul, .pessoal ol {
     padding: 15px 0px 15px 50px;
 }
 
 table {
-    margin: 30px 0px 0px 20px;
+    margin: 10px 0px 15px 50px;
     border: 2px solid var(--cor-linha-tabela);
     table-layout: fixed;
     border-collapse: collapse;
@@ -130,7 +118,7 @@ thead {
     color: var(--cor-fonte);
 }
 
-td, td {
+td, th {
     padding: 5px;
 }
 
@@ -149,4 +137,3 @@ tbody tr:nth-child(even) {
 .imagem {
     margin: 5px 15px 5px 10px;
 }
-
