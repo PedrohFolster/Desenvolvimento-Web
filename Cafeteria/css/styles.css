@@ -63,7 +63,6 @@ hr {
     margin: 15px;
     border-top: 3px solid var(--cor-lateral-linha);
 } 
-<<<<<<< HEAD
 
 .links {
     display: block;
@@ -132,5 +131,42 @@ hr {
     margin: 20px;
     border-radius: 50%;
 }
-=======
->>>>>>> dff449c4aff848acedad4a23f0492339e49f8172
+
+.home-inferior {
+    display: flex;
+    height: 70vh;
+}
+
+.img-inferior {
+    margin: 5px 0px;
+    width: 100%;
+}
+
+
+/*-----------------------------------*/
+/*-------------Sobre---------------*/
+/*-----------------------------------*/
+
+#sobre {
+    background-color: var(--cor-fundo-principal-claro);
+    height: 100vh;
+}
+
+#sobre h2 {
+    color: var(--cor-fonte-secundaria);
+    text-align: center;
+    height: 15vh;
+    font-size: 2.5rem;
+    padding: 20px;
+}
+
+#sobre p {
+    font-size: 1.5rem;
+    margin: 15px 50px;
+    text-align: justify;
+}
+
+/*-----------------------------------*/
+/*-------------Cardapio---------------*/
+/*-----------------------------------*/
+
