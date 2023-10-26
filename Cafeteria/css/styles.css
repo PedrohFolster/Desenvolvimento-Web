@@ -122,5 +122,12 @@ hr {
 /*-----------------------------------*/
 
 .home-superior {
-    
+    display: flex;
+    justify-content: center;
+    height: 30vh;
+}
+
+.img-superior {
+    margin: 20px;
+    border-radius: 50%;
 }
