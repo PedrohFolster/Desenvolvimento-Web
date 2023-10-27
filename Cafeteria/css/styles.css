@@ -226,3 +226,39 @@ tbody tr:nth-child(odd) {
 tbody tr:nth-child(even) {
     background-color: var(--cor-fundo-linha-tabela-secundaria);
 }
+
+#galeria {
+    background-color: var(--cor-fundo-principal-claro);
+    height: 100vh;
+}
+
+#galeria h2 {
+    color: var(--cor-fonte-secundaria);
+    text-align: center;
+    height: 15vh;
+    font-size: 2.5rem;
+    padding: 30px;
+}
+
+#galeria p {
+    color: var(--cor-fonte-secundaria);
+    margin: 20px;
+    height: 10vh;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#galeria-imagens {
+    display: grid;
+    grid-template-columns: 20%;
+    grid-template-rows: 1fr 1fr;
+}
+
+.imagem1, .imagem2, .imagem3, .imagem4, .imagem5, .imagem6, .imagem7, .imagem8 {
+    padding: 10px;
+}
+
+.imagem1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
