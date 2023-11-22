@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Oswald|Satisfy&display=swap');
+ 
+:root{
+ --cor-fundo: #505050;
+ --cor-fundo-lateral: #3d3833;
+ --cor-fundo-principal-claro: #faf3eb;
+ --cor-fundo-tabela: #8d847b;
+ --cor-fundo-linha-tabela-principal: #c7b9a9;
+ --cor-fundo-linha-tabela-secundaria: #faf3eb;
+ --cor-fonte-branco: #ffffff;
+ --cor-fonte-preto: #000000;
+ --cor-fonte-secundaria: #8d847b;
+ --cor-hover: #8d847b;
+ --cor-lateral-linha: #c7b9a9;
+ --cor-borda: #000000;
+ --cor-destaque: #e88f2a;
+ --fonte: 'Oswald', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: var(--fonte);
+}
+
+body {
+    display: flex;
+    background-color: var(--cor-fundo);
+}
+
+/* Lateral */
+
+.lateral {
+    width: 15%;
+    height: 100vh;
+    background-color: var(--cor-fundo-lateral);
+    position: fixed;
+    text-align: center;
+}
+
+.logo {
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.lateral h1 {
+    color: var(--cor-fonte-branco);
+    font-family: var(--fonte);
+    font-size: 2rem;
+}
+
+.lateral h3 {
+    color: var(--cor-fonte-secundaria);
+    font-size: 1rem;
+}
+
+hr {
+    margin: 15px;
+    border: 2px solid var(--cor-lateral-linha);
+}
+
+.navegar-secoes {
+    display: block;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 1.5rem;
+}
+
+.navegar-secoes li {
+    padding: 15px 0;
+}
+
+.navegar-secoes a {
+    color: var(--cor-fonte-branco);
+}
+
+.navegar-secoes li:hover {
+    background-color: var(--cor-hover);
+}
+
+.btn {
+    transition: ease-in-out, .3s;
+    cursor: pointer;
+}
+
+.sociais {
+    text-align: center;
+    color: var(--cor-fonte-branco);
+    padding-top: 50px;
+}
+
+.redes {
+    padding: 10px 25px;
+    width: 30%;
+}
+
+/* Principal */
+
+.principal {
+    width: 100%;
+    height: 100vh;
+    padding-left: 15%;
+}
+
+.home-superior {
+    display: flex;
+    justify-content: center;
+    height: 30vh;
+}
+
+.imagem-superior {
+    margin: 20px 0;
+    border-radius: 50%;
+}
+
+.home-inferior {
+    display: flex;
+    height: 70vh;
+}
+
+.imagem-inferior {
+    width: 100%;
+    margin: 5px 0;
+}
+
+/* Sobre */
+
+#sobre {
+    height: 100vh;
+    background-color: var(--cor-fundo-principal-claro);
+}
+
+#sobre h2 {
+    text-align: center;
+    padding: 20px;
+    height: 15vh;
+    color: var(--cor-fonte-secundaria);
+    font-size: 2.5rem;
+}
+
+#sobre p {
+    text-align: justify;
+    margin: 15px 50px;
+    font-size: 1.5rem;
+}
