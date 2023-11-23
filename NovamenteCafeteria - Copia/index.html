@@ -8,9 +8,9 @@
 </head>
 <body>
     <section class="lateral">
-        <a href="#home"><img class="logo" src="./img/logo.jpg" alt="Logo"></a>
-        <h1>Cafeteria Melo</h1>
-        <h3>O melhor café da cidade</h3>
+        <a href="#home"><img class="logo" src="./img/logo.jpg" alt="Logo do Sistema"></a>
+        <a href="#home"><h1>Cafeteria Melo</h1></a>
+        <a href="#home"><h3>O melhor café da cidade</h3></a>
         <hr>
         <div class="links">
             <ul>
@@ -33,22 +33,22 @@
         </div>
         <div class="sociais">
             <h2>Nossas redes sociais</h2>
-            <a href="https://facebook.com/"><img class="redes" src="./img/facebook.svg" alt="Facebook"></a>
-            <a href="https://twitter.com/"><img class="redes" src="./img/twitter.svg" alt="Twitter"></a>
-            <a href="https://instagram.com/"><img class="redes" src="./img/instagram.svg" alt="Instagram"></a>
+            <a href="https://facebook.com/"><img class="redes" src="./img/facebook.svg" alt="Facebook Logo"></a>
+            <a href="https://twitter.com/"><img class="redes" src="./img/twitter.svg" alt="Twitter Logo"></a>
+            <a href="https://instagram.com/"><img class="redes" src="./img/instagram.svg" alt="Instagram Logo"></a>
         </div>
     </section>
     <main class="principal">
-    <section id="home">
-        <div class="home-superior">
-            <img class="img-superior" src="./img/home-superior.jpg" alt="Home Superior">
-        </div>
-        <div class="home-inferior">
-            <img class="img-inferior" src="./img/home-inferior2.jpg" alt="Home Inferior">
-        </div>
-    </section>
-    <section id="sobre">
-                    <h2> A Cafeteria Melo: Uma mistura de Sabor e Elegância</h2>
+        <section id="home">
+            <div class="home-superior">
+                <img class="img-superior" src="./img/home-superior.jpg" alt="Imagem Superior">
+            </div>
+            <div class="home-inferior">
+                <img class="img-inferior" src="./img/home-inferior2.jpg" alt="Imagem Inferior">
+            </div>
+        </section>
+        <section id="sobre">
+            <h2> A Cafeteria Melo: Uma mistura de Sabor e Elegância</h2>
             <p>
                 Bem-vindo à nossa charmosa cafeteria em Florianópolis, onde a brisa do mar se mistura com o aroma do
                 café fresco. Desfrute de nossos grãos selecionados, bolos caseiros e um ambiente acolhedor. Sabor,
@@ -71,7 +71,91 @@
             <p>Venha nos visitar e descubra por si mesmo o que faz da nossa cafeteria em Florianópolis um lugar
                 especial. Esperamos recebê-lo em breve para compartilhar o sabor e a cultura do café nesta bela ilha.
             </p>
-    </section>
-</main>
+        </section>
+        <section id="menu">
+            <h2>Nossos Cafés</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Descrição</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Café Preto</td>
+                        <td>Café feito com grãos arábicos do tipo acaiá.</td>
+                        <td>5.00</td>
+                    </tr>
+                    <tr>
+                        <td>Café com Leite</td>
+                        <td>Descrição do Café com Leite.</td>
+                        <td>7.00</td>
+                    </tr>
+                    <tr>
+                        <td>Espresso</td>
+                        <td>Café espresso com grãos arábicos do tipo acaiá.</td>
+                        <td>10.00</td>
+                    </tr>
+                    <tr>
+                        <td>Cappuccino</td>
+                        <td>Café espresso com grãos arábicos do tipo bourbon, leite vaporizado.</td>
+                        <td>15.00</td>
+                    </tr>
+                    <tr>
+                        <td>Mocha</td>
+                        <td>Café espresso com grãos arábicos do tipo bourbon, leite vaporizado, espuma de leite e calda de chocolate.</td>
+                        <td>20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Café Gelado</td>
+                        <td>Café feito com grãos arábicos do tipo bourbon, gelo e leite.</td>
+                        <td>30.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="galeria">
+            <h2>Galeria dos nossos cafés e do nosso ambiente</h2>
+            <p>Com um ambiente contemporâneo e de requinte, a Cafeteria Melo
+                é um ótimo local de encontro com os amigos!</p>
+            <div class="galeria-imagens">
+                <div class="imagem1"><img class="imagem" src="./img/galeria1.jpg" alt="Imagens de cafés e da cafeteria"></div>
+                <div class="imagem2"><img class="imagem" src="./img/galeria2.jpg" alt="Imagens de cafés e da cafeteria"></div>
+                <div class="imagem3"><img class="imagem" src="./img/galeria3.jpg" alt="Imagens de cafés e da cafeteria"></div>
+                <div class="imagem4"><img class="imagem" src="./img/galeria4.jpg" alt="Imagens de cafés e da cafeteria"></div>
+                <div class="imagem5"><img class="imagem" src="./img/galeria5.jpg" alt="Imagens de cafés e da cafeteria"></div>
+                <div class="imagem6"><img class="imagem" src="./img/galeria6.jpg" alt="Imagens de cafés e da cafeteria"></div>
+                <div class="imagem7"><img class="imagem" src="./img/galeria7.jpg" alt="Imagens de cafés e da cafeteria"></div>
+                <div class="imagem8"><img class="imagem" src="./img/galeria8.jpg" alt="Imagens de cafés e da cafeteria"></div>
+            </div>
+        </section>
+        <section id="contato">
+            <h2>Entre em contato conosco!</h2>
+
+            <form action="">
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input class="input" type="text" name="nome" id="nome">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input class="input" type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label for="nome">Telefone:</label>
+                    <input class="input" type="tel" name="telefone" id="telefone">
+                </div>
+                <div>
+                    <label for="mensagem">Mensagem:</label>
+                <textarea name="mensagem" id="mensagem" cols="100" rows="5"></textarea>
+            </div>
+                <div class="div-botao">
+                    <button class="botao" type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
