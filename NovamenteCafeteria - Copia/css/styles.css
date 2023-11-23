@@ -30,19 +30,24 @@ body {
     background-color: var(--cor-fundo);
 }
 
-/* Lateral */
+
+/*-----------------------------------*/
+/*-------------Lateral---------------*/
+/*-----------------------------------*/
 
 .lateral {
     width: 15%;
     height: 100vh;
-    background-color: var(--cor-fundo-lateral);
+    color: var(--cor-fonte-branco);
     text-align: center;
     position: fixed;
+    background-color: var(--cor-fundo-lateral);
 }
 
 .logo {
+    margin: 15px 0px;
+    padding: 5px 0px;
     border-radius: 50%;
-    margin: 20px 0;
 }
 
 .lateral h1 {
@@ -50,51 +55,71 @@ body {
     font-size: 2rem;
 }
 
-.lateral h3 {
+.lateral h4 {
     color: var(--cor-fonte-secundaria);
-    font-size: 1rem;
 }
 
 hr {
-    border: 2px solid var(--cor-lateral-linha);
     margin: 15px;
-}
+    border-top: 3px solid var(--cor-lateral-linha);
+} 
 
 .links {
+    display: block;
+    text-align: center;
     padding-top: 15px;
-}
-
-.links a {
     font-size: 1.5rem;
-    color: var(--cor-fonte-branco);
 }
 
 .links li {
-    padding: 15px;
+    padding: 15px 0px;
 }
 
-.links li:hover {
+.links a {
+    color: var(--cor-fonte-branco);
+}
+
+.btn {
+    transition: ease-in-out .3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: var(--cor-fonte-branco);
     background-color: var(--cor-hover);
 }
 
-.sociais {
-    color: var(--cor-fonte-branco);
-    padding-top: 50px;
-    font-size: 1rem;
+.btn-social:hover {
+    background: none;
 }
 
 .redes {
-    padding: 10px 25px;
-    width: 30%;
+    padding-top: 50px;
 }
 
-/* Principal */
+.social {
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-social {
+    width: 30px;
+}
+
+/*-----------------------------------*/
+/*-------------Principal---------------*/
+/*-----------------------------------*/ 
 
 .principal {
     width: 100%;
     height: 100vh;
     padding-left: 15%;
 }
+
+/*-----------------------------------*/
+/*-------------Home---------------*/
+/*-----------------------------------*/
 
 .home-superior {
     display: flex;
@@ -103,8 +128,8 @@ hr {
 }
 
 .img-superior {
+    margin: 20px;
     border-radius: 50%;
-    margin: 15px 0;
 }
 
 .home-inferior {
@@ -113,38 +138,43 @@ hr {
 }
 
 .img-inferior {
+    margin: 5px 0px;
     width: 100%;
-    margin: 5px 0;
 }
 
-/* Sobre */
+
+/*-----------------------------------*/
+/*-------------Sobre---------------*/
+/*-----------------------------------*/
 
 #sobre {
-    width: 100%;
-    height: 100vh;
     background-color: var(--cor-fundo-principal-claro);
+    height: 100vh;
 }
 
 #sobre h2 {
     color: var(--cor-fonte-secundaria);
-    font-size: 2.5rem;
     text-align: center;
-    padding: 15px;
-    height: 15%;
+    height: 15vh;
+    font-size: 2.5rem;
+    padding: 20px;
 }
 
 #sobre p {
     font-size: 1.5rem;
-    margin: 10px 50px;
+    margin: 15px 50px;
+    text-align: justify;
 }
 
-/* Menu */
+/*-----------------------------------*/
+/*-------------Cardapio---------------*/
+/*-----------------------------------*/
 
-#menu {
+#cardapio {
     height: 100vh;
 }
 
-#menu h2 {
+#cardapio h2 {
     color: var(--cor-destaque);
     text-align: center;
     height: 25vh;
@@ -220,47 +250,37 @@ tbody tr:nth-child(even) {
  
 .galeria-imagens {
     display: grid;
-    grid-template-columns: 20%;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    max-width: 100vh; /* Limita a largura máxima ao tamanho da janela de visualização */
+    margin-left: 20%;
 }
- 
+
 .imagem1, .imagem2, .imagem3, .imagem4,
-.imagem5, .imagem6, .imagem7, .imagem8{
+.imagem5, .imagem6, .imagem7, .imagem8 {
     padding: 10px;
 }
- 
-.imagem1 {
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
- 
-.imagem5 {
-    grid-column-start: 5;
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
- 
-.imagem  {
+
+.imagem {
     display: block;
     width: 100%;
-    height: 100%;
-    align-items: center;
 }
 
-/* Contato */
+
+/*-----------------------------------*/
+/*-------------Contato---------------*/
+/*-----------------------------------*/
 
 #contato {
-    width: 100%;
     height: 100vh;
-    background-color: var(--cor-fundo);
 }
 
 #contato h2 {
     color: var(--cor-destaque);
-    font-size: 2.5rem;
     text-align: center;
-    padding-top: 30px;
     height: 25vh;
+    font-size: 2.5rem;
+    padding: 30px;
 }
 
 form div {
